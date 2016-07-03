@@ -67,9 +67,6 @@ subsystem adf
 # FMRadio
 /dev/fm			 0660  system	   media
 
-#goodix add for gt9p new by chenxuanyu 20150317
-/dev/gf66xx-spi             0666   system     system
-
 # add the read write right of ttyUSB*
 /dev/bus/usb/*     	  0660   root       usb
 /dev/ttyUSB0              0660   radio      radio
@@ -218,7 +215,5 @@ subsystem adf
 #MTK In-House TEE
 /dev/ttyACM0		  0660   radio	    radio
 
-/dev/irtx              0660   system     system
-/dev/ir-learning       0660   system     system
-#microarray finger print
-/dev/madev0               0666   root    root
+# aratek fingerprint
+/dev/esfp0              0666   root       root

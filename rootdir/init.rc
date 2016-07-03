@@ -155,9 +155,6 @@ on init
     chown system log /sys/fs/pstore/console-ramoops
     chmod 0440 /sys/fs/pstore/console-ramoops
 
-	# ion device
-	chmod 0666 /dev/ion
-
 # Healthd can trigger a full boot from charger mode by signaling this
 # property when the power button is held.
 on property:sys.boot_from_charger_mode=1
@@ -317,10 +314,6 @@ on post-fs-data
 
     # Separate location for storing security policy files on data
     mkdir /data/security 0711 system system
-
-    # add for mediaserver data
-    mkdir /data/mediaserver 0775 media media
-    restorecon /data/mediaserver
 
     # Reload policy from /data/security if present.
     setprop selinux.reload_policy 1
