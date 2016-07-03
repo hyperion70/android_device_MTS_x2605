@@ -1,5 +1,4 @@
-
-rild.libpath=mtk-ril.so
+rild.libpath=/system/lib64/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
 # MTK, Infinity, 20090720 {
@@ -25,8 +24,6 @@ wifi.tethering.interface=ap0
 #
 
 ro.opengles.version=196608
-
-persist.mtk.aee.aed=on
 
 wifi.direct.interface=p2p0
 dalvik.vm.heapgrowthlimit=256m
@@ -96,11 +93,13 @@ fmradio.driver.enable=1
 ril.first.md=1
 ril.flightmode.poweroffMD=1
 ril.telephony.mode=0
+dalvik.vm.mtk-stack-trace-file=/data/anr/mtk_traces.txt
 mediatek.wlan.chip=CONSYS_MT6735
 mediatek.wlan.module.postfix=_consys_mt6735
 ril.read.imsi=1
 ril.radiooff.poweroffMD=0
-ro.mediatek.version.branch=L1.MP3
+ro.frp.pst=/dev/block/platform/mtk-msdc.0/by-name/frp
+ro.mediatek.version.branch=L1.MP3.PPB2
 ro.mediatek.version.sdk=4
 ro.mtk_gemini_support=1
 ro.mtk_lossless_bt_audio=1

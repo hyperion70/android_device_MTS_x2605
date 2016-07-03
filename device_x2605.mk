@@ -64,21 +64,17 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/permissions/media_codecs.xml \
 	$(LOCAL_PATH)/configs/platform.xml:system/etc/permissions/platform.xml
 
-# CM's Snap camera
-PRODUCT_PACKAGES += \
-	Snap
-
 # MTK's Engineer Mode
 PRODUCT_PACKAGES += \
-        EngineerMode
+	EngineerMode
 
 # MTK's XLog needed for Engineer Mode
 PRODUCT_PACKAGES += \
- 	libxlog
+	libxlog
 
 # Gralloc
 PRODUCT_PACKAGES += \
-   	libgralloc_extra
+	libgralloc_extra
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -86,48 +82,41 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    	lib_driver_cmd_mt66xx \
-    	libwifi-hal-mt66xx \
-    	wifi_hal \
-    	libwpa_client \
-    	hostapd \
-    	hostapd_cli \
-    	dhcpcd.conf \
-    	wpa_supplicant \
-    	wpa_supplicant.conf \
+	lib_driver_cmd_mt66xx \
+	libwifi-hal-mt66xx \
+	wifi_hal \
+	libwpa_client \
+	hostapd \
+	hostapd_cli \
+	dhcpcd.conf \
+	wpa_supplicant \
+	wpa_supplicant.conf \
 	libnl_2
    	
 # Audio
 PRODUCT_PACKAGES += \
-    	audio.a2dp.default \
-    	audio_policy.default \
-    	audio_policy.stub \
-    	audio.r_submix.default \
-    	audio.usb.default \
-    	libaudio-resampler \
-    	tinymix \
-    	libtinyalsa \
-    	libtinycompress \
-    	librs_jni \
+	audio.a2dp.default \
+	audio_policy.default \
+	audio_policy.stub \
+	audio.r_submix.default \
+	audio.usb.default \
+	libaudio-resampler \
+	tinymix \
+	libtinyalsa \
+	libtinycompress \
+	librs_jni \
 	libtinyxml
 
 # Audio profiles used to address the correct audio devices for headset, etc.
 PRODUCT_COPY_FILES += \
-    	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
-    	$(LOCAL_PATH)/configs/audio_device.xml:system/etc/audio_device.xml \
-    	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
-    	$(LOCAL_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf
-
-# Thermal
-# PRODUCT_COPY_FILES += \
-    	$(LOCAL_PATH)/configs/thermal/thermal.conf:system/etc/.tp/thermal.conf \
-    	$(LOCAL_PATH)/configs/thermal/thermal.off.conf:system/etc/.tp/thermal.off.conf \
-    	$(LOCAL_PATH)/configs/thermal/.ht120.mtc:system/etc/.tp/.ht120.mtc \
-    	$(LOCAL_PATH)/configs/thermal/.thermal_policy_00:system/etc/.tp/.thermal_policy_00
+	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
+	$(LOCAL_PATH)/configs/audio_device.xml:system/etc/audio_device.xml \
+	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf \
+	$(LOCAL_PATH)/configs/audio_effects.conf:system/etc/audio_effects.conf
 
 # Charger
 PRODUCT_PACKAGES += \
-      	charger_res_images
+	charger_res_images
 
 # Live Display
 PRODUCT_PACKAGES += \
@@ -135,55 +124,58 @@ PRODUCT_PACKAGES += \
 
 # Telecom
 PRODUCT_COPY_FILES += \
-    	$(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml \
-    	$(LOCAL_PATH)/configs/ecc_list.xml:system/etc/ecc_list.xml \
-    	$(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml 
+	$(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml \
+	$(LOCAL_PATH)/configs/ecc_list.xml:system/etc/ecc_list.xml \
+	$(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml 
 
 # Torch
 PRODUCT_PACKAGES += \
-    	Torch
+	Torch
 
 # Network dependency
 PRODUCT_PACKAGES += \
-    	libifaddrs	
+	libifaddrs	
 
 # STk
 PRODUCT_PACKAGES += \
-    	Stk
+	Stk
 
 # GPS
 PRODUCT_COPY_FILES += \
-     	$(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml 
+	$(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml 
 
 # FM Radio
 PRODUCT_PACKAGES += \
-     	FmRadio \
-     	libfmjni \
+	FmRadio \
+	libfmjni \
 	libfmmt6620 \
-        libfmmt6628 \
-        libfmmt6627 \
-        libfmmt6630 \
-        libfmcust 
+	libfmmt6628 \
+	libfmmt6627 \
+	libfmmt6630 \
+	libfmcust 
 
 # Media	
 PRODUCT_COPY_FILES += \
-    	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-    	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+	frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
 	$(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
 	$(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 
 PRODUCT_COPY_FILES += \
-    	device/MTS/x2605/rootdir/etc/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
+	device/MTS/x2605/rootdir/etc/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
 
 # limit dex2oat threads to improve thermals
 PRODUCT_PROPERTY_OVERRIDES += \
-    	dalvik.vm.boot-dex2oat-threads=4 \
-    	dalvik.vm.dex2oat-threads=2 \
-    	dalvik.vm.image-dex2oat-threads=4
+	dalvik.vm.boot-dex2oat-threads=4 \
+	dalvik.vm.dex2oat-threads=2 \
+	dalvik.vm.image-dex2oat-threads=4
 
-$(call inherit-product, build/target/product/full.mk)
+PRODUCT_PROPERTY_OVERRIDES := \
+	persist.sys.timezone=Europe/Moscow \
+	persist.sys.language=ru \
+	persist.sys.country=RU 
 
 ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.secure=0 \
@@ -193,3 +185,4 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	persist.service.acm.enable=0 \
 	ro.oem_unlock_supported=1 \
 	persist.sys.usb.config=mtp
+

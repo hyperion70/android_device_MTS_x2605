@@ -333,7 +333,7 @@ BOARD_SEPOLICY_UNION += \
 
 # Block based ota
 # see http://review.cyanogenmod.org/#/c/78849/1/core/Makefile
-BLOCK_BASED_OTA := false
+BLOCK_BASED_OTA := true
 
 # recovery__________TWRP 3.0.2-0
 TARGET_RECOVERY_FSTAB := device/MTS/x2605/recovery/root/fstab.mt6753
