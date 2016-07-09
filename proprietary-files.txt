@@ -240,9 +240,6 @@ system/lib/libgifEncoder_jni.so
 system/lib/libgpu_aux.so
 system/lib/libgraphite2.so
 system/lib/libgui_ext.so
-system/lib/libgybeauty.so
-system/lib/libgybeauty420.so
-system/lib/libgybeauty422.so
 system/lib/libhotknot.so
 system/lib/libhotknot_vendor.so
 system/lib/libhwm.so
@@ -433,9 +430,6 @@ system/lib64/libged.so
 system/lib64/libgpu_aux.so
 system/lib64/libgraphite2.so
 system/lib64/libgui_ext.so
-system/lib64/libgybeauty.so
-system/lib64/libgybeauty420.so
-system/lib64/libgybeauty422.so
 system/lib64/libhotknot.so
 system/lib64/libhotknot_vendor.so
 system/lib64/libhwm.so
